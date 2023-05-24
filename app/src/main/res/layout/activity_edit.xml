@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageMain"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/imageText"
+            android:layout_width="399dp"
+            android:layout_height="56dp"
+            android:layout_alignLeft="@id/imageMain"
+            android:layout_alignTop="@id/imageMain"
+            android:layout_alignRight="@id/imageMain"
+            android:layout_alignBottom="@id/imageMain"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="294dp"
+            android:layout_marginTop="354dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="-10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text..."/>
+    <Button
+        android:id="@+id/placeBtn"
+        android:text="Place Text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center" />
+    <Button
+        android:id="@+id/saveBtn"
+        android:text="Save Changes"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_gravity="center"
+        />
+</LinearLayout>
